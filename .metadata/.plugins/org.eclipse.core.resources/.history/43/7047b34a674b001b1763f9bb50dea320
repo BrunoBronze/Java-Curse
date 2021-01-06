@@ -1,0 +1,39 @@
+package entities;
+
+public abstract class Person {
+
+	protected String name;
+	protected Double Income;
+
+	public Person() {
+	}
+
+	public Person(String name, Double income) {
+		this.name = name;
+		Income = income;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Double getIncome() {
+		return Income;
+	}
+
+	public void setIncome(Double income) {
+		Income = income;
+	}
+	
+	public Double taxRate(Double income) {
+		
+		
+		
+		return 0.0;
+	}
+
+}

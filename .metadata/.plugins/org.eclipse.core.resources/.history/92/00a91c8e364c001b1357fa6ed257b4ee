@@ -1,0 +1,37 @@
+package entities;
+
+public class Company_Person extends Person {
+
+	protected Integer employees;
+
+	public Company_Person() {
+		super();
+	}
+
+	public Company_Person(String name, Double income, Integer employees) {
+		super(name, income);
+		this.employees = employees;
+	}
+
+	public Integer getEmployees() {
+		return employees;
+	}
+
+	public void setEmployees(Integer employees) {
+		this.employees = employees;
+	}
+
+	@Override
+	public Double TaxRate() {
+		Double tax = 0.0;
+
+		if (employees > 10) {
+			tax = income * 1.14;
+		} else if (employees < 11) {
+			tax = income * 1.16;
+		}
+
+		return tax;
+	}
+
+}

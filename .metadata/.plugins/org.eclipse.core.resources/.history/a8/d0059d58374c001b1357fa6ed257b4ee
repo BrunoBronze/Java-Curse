@@ -1,0 +1,47 @@
+package entities;
+
+public final class Individual_Person extends TaxPayer {
+
+	private Double healthExpenditures;
+
+	public Individual_Person() {
+		super();
+	}
+
+	public Individual_Person(String name, Double anualIncome, Double healthExpenditures) {
+		super(name, anualIncome);
+		this.healthExpenditures = healthExpenditures;
+	}
+
+	public Double geHealthExpenditures() {
+		return healthExpenditures;
+	}
+
+	public void setHealthExpendures(Double healthExpenditures) {
+		this.healthExpenditures = healthExpenditures;
+	}
+
+	@Override
+	public Double Tax() {
+		Double tax = 0.0;
+
+		if (anualIncome < 20000) {
+			tax = anualIncome * 1.15 * HealthExpend();
+		} else if (anualIncome > 19999) {
+			tax = anualIncome * 1.25 * HealthExpend();
+		}
+
+		return tax;
+	}
+
+	public Double HealthExpend() {
+		Double tax = 0.0;
+
+		if (healthExpenditures > 0) {
+			tax = healthExpenditures * 0.5;
+		}
+
+		return tax;
+	}
+
+}

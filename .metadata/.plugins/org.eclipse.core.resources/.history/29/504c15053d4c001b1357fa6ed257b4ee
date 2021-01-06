@@ -1,0 +1,48 @@
+package entities;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public abstract class TaxPayer {
+
+	protected String name;
+	protected Double anualIncome;
+
+	public TaxPayer() {
+	}
+
+	public TaxPayer(String name, Double anualIncome) {
+		this.name = name;
+		anualIncome = anualIncome;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public Double getAnualIncome() {
+		return anualIncome;
+	}
+
+	public void setAnualIncome(Double anualIncome) {
+		anualIncome = anualIncome;
+	}
+
+	public abstract Double tax();
+
+	public Double TotalIncome(List<TaxPayer> list) {
+
+		list = new ArrayList<>();
+		Double sum = 0.0;
+
+		for (TaxPayer p : list) {
+			sum += p.anualIncome;
+		}
+
+		return sum;
+	}
+}

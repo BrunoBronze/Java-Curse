@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="util.CurrencyConverter"/>
+<fullyQualifiedTypeName name="conta_bancaria.Conta"/>
+<fullyQualifiedTypeName name="conta_bancaria.Abrir_conta"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="util.Funcionario"/>
+<fullyQualifiedTypeName name="java.sql.Date"/>
+<fullyQualifiedTypeName name="entities.enums.WorkerLevel"/>
+<fullyQualifiedTypeName name="entities.HourContract"/>
+<fullyQualifiedTypeName name="entities.Department"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="entities.enums.OrderStatus"/>
+<fullyQualifiedTypeName name="entities.Client"/>
+<fullyQualifiedTypeName name="entities.OrderItem"/>
+<fullyQualifiedTypeName name="entities.Order"/>
+<fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+<fullyQualifiedTypeName name="entities.Product"/>
+<fullyQualifiedTypeName name="javax.swing.text.SimpleAttributeSet"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="entities.UsedProduct"/>
+<fullyQualifiedTypeName name="entities.ImportedProduct"/>
+<fullyQualifiedTypeName name="entities.Individual_Person"/>
+<fullyQualifiedTypeName name="entities.Company_Person"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.Locale"/>
+<fullyQualifiedTypeName name="model.entities.Account"/>
+<fullyQualifiedTypeName name="model.exception.DomainException"/>
+</qualifiedTypeNameHistroy>

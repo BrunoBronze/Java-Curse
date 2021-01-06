@@ -1,0 +1,47 @@
+package entities;
+
+public final class Physical_Person extends Person {
+
+	private Double healthExpend;
+
+	public Physical_Person() {
+		super();
+	}
+
+	public Physical_Person(String name, Double income, Double healthExpend) {
+		super(name, income);
+		this.healthExpend = healthExpend;
+	}
+
+	public Double getHealthExpend() {
+		return healthExpend;
+	}
+
+	public void setHealthExpend(Double healthExpend) {
+		this.healthExpend = healthExpend;
+	}
+
+	@Override
+	public Double TaxRate() {
+		Double tax = 0.0;
+
+		if (income < 20000) {
+			tax = income * 1.15 * HealthExpend();
+		} else if (income > 19999) {
+			tax = income * 1.25 * HealthExpend();
+		}
+
+		return tax;
+	}
+
+	public Double HealthExpend() {
+		Double tax = 0.0;
+
+		if (healthExpend > 0) {
+			tax = healthExpend * 0.5;
+		}
+
+		return tax;
+	}
+
+}

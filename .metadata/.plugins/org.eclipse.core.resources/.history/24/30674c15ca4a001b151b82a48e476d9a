@@ -1,0 +1,40 @@
+package entities;
+
+import java.text.SimpleDateFormat;
+import java.util.Date;
+
+public final class UsedProduct extends Product {
+
+	private SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+	private Date manufactureDate;
+
+	public UsedProduct() {
+	}
+
+	public UsedProduct(String name, Double price, Date manufactureDate) {
+		super(name, price);
+		this.manufactureDate = manufactureDate;
+	}
+
+	public Date getManufactureDate() {
+		return manufactureDate;
+	}
+
+	public void setManufactureDate(Date manufactureDate) {
+		this.manufactureDate = manufactureDate;
+	}
+
+	public final String priceTag() {
+		return name + ", $" + price + ", manufacture date: " + sdf.format(manufactureDate);
+	}
+	public String toString() {
+		StringBuilder sb = new StringBuilder();
+		sb.append(name);
+		sb.append(" (used) $");
+		sb.append(price);
+		sb.append(" (Manufacture date: ");
+		sb.append(String.format(sdf.format(manufactureDate)));
+		sb.append(")");
+		return sb.toString();
+	}
+}

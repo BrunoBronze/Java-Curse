@@ -1,0 +1,31 @@
+package entities;
+
+public final class Physical_Person extends Person{
+
+	private Double healthExpend;
+	
+	public Physical_Person(){
+		super();
+	}
+
+	public Physical_Person(String name, Double income, Double healthExpend) {
+		super(name, income);
+		this.healthExpend = healthExpend;
+	}
+
+	public Double getHealthExpend() {
+		return healthExpend;
+	}
+
+	public void setHealthExpend(Double healthExpend) {
+		this.healthExpend = healthExpend;
+	}
+
+	@Override
+	public Double TaxRate() {
+		
+		return null;
+	}
+	
+	
+}

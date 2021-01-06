@@ -1,0 +1,5 @@
+package entities;
+
+public class Juridical_Person {
+
+}

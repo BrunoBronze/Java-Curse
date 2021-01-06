@@ -1,0 +1,7 @@
+package entities;
+
+public class Juridical_Person extends Person{
+
+	protected Integer numberWorkers;
+	
+}

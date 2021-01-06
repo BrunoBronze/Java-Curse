@@ -1,0 +1,12 @@
+package entities;
+
+public final class Physical_Person extends Person{
+
+	private Double healthExpend;
+	
+	public Physical_Person(){
+		super();
+	}
+	
+	
+}

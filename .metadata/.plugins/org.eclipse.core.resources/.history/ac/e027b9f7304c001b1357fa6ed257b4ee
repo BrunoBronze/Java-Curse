@@ -1,0 +1,33 @@
+package entities;
+
+public class Juridical_Person extends Person{
+
+	protected Integer numberWorkers;
+	
+	public Juridical_Person() {
+		super();
+	}
+
+	public Juridical_Person(String name, Double income, Integer numberWorkers) {
+		super(name, income);
+		this.numberWorkers = numberWorkers;
+	}
+
+	public Integer getNumberWorkers() {
+		return numberWorkers;
+	}
+
+	public void setNumberWorkers(Integer numberWorkers) {
+		this.numberWorkers = numberWorkers;
+	}
+
+	@Override
+	public Double TaxRate() {
+		Double tax = if() {
+			
+		};
+		return null;
+	}
+	
+	
+}

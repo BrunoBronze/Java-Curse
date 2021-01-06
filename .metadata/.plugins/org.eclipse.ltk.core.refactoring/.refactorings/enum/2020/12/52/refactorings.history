@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;orderStatus&apos; to &apos;entities.enums&apos;&#x0D;&#x0A;- Original project: &apos;enum&apos;&#x0D;&#x0A;- Original element: &apos;enum/src/orderStatus&apos;&#x0D;&#x0A;- Renamed element: &apos;enum/src/entities.enums&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;orderStatus&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;orderStatus" name="entities.enums" qualified="false" references="true" stamp="1608735310292" textual="false" version="1.0"/>
+</session>
